@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-color: yellow;
+		
+}
+
+body { /* selector is for body, adjusting font, margin, and background*/
+	font-size: 110%; 
+	background-color: #42dff4;
+	width: 90%; /* 906px */
+	margin: Auto;
+	/*border-top: 3px solid black;
+	border-right: 3px solid black;
+	border-left: 3px solid black; */
+	border: 3px solid black;
+	padding-left: 1em;
+	padding-top: 1em;
+	padding-right: 1em;
+	
+	
+}
+
+#nav_list ul {
+	list-style-type: none;
+}
+
+#nav_list ul li {
+	border: 2px solid black;
+	margin-bottom: .5em;
+	width: 150px;
+}
+
+#nav_list ul li a {
+	display: block;
+	text-decoration: none;
+}
+
+#nav_list ul li a:hover, #nav_list ul li a:focus {
+	background-color: pink;
+	}
+
+/*styles for the header*/
+header { /* type selector */
+		text-align: center;
+		border: 2px solid black;
+		height: 400px;
+		/*background image: -webkit-linear-gradient (
+		60deg, red 0% white 50% blue 100%);*/
+}
+
+
+ 
+aside {
+	float: right;
+	width: 33.11%; /* 300px */
+	padding-top: 1em;
+	
+}
+
+main{
+	float: left;
+	width: 60.7%; /*550px */
+	padding-top: 1em;
+}
+
+
+main li { /* descendant selector */
+	list-style-type: square; 
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+h1,h2{ /* multiple selector */
+	color: orange;
+	padding-top: 1em;
+}
+
+	/* * means to apply to everything in document */
+	
+	
+	main p { /* child selector*/
+		font-size: 200%
+		;padding-left: .75em .25em .75em .25em;
+	
+}
+	
+	main ul {
+		padding-left: 2em;
+		padding-right: 2em;
+	
+
+}
+	
+	a:link { /*psuedo selector */
+		color: blue;
+		font-size: 150%;
+}
+		
+	a:hover, a:focus { /* changes color of link when hovered over */
+		color: red;
+}
+	/*styles for the footer*/ 
+	
+footer{
+	clear: both;
+}
+	
+	#copyright { /* id selector */
+	text-align: center;
+}
+
+@media only screen and (max-width: 375px) { 
+		#nav_list {
+			display: none;
+		}		
+		header h2 {
+			display: none;
+		}
+		aside{
+			float: none;
+			width: 100%;
+		}
+		main {
+			font-size:80%;
+			width: 67%;
+		}
+		header{
+			font-size: 80%;
+			
+		}
+}
+

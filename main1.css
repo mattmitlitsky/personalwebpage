@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* * means applied to everything  */
+
+html{
+	background-color: yellow;
+		
+}
+
+body { /* selector is for body, adjusting font, margin, and background*/
+	font-size: 110%; 
+	background-color: #42dff4;
+	width: 700px;
+	margin: Auto;
+	/*border-top: 3px solid black;
+	border-right: 3px solid black;
+	border-left: 3px solid black; */
+	border: 3px solid black;
+	padding-left: 1em;
+	padding-top: 1em;
+	
+	
+}
+
+
+/*styles for the header*/
+header { /* type selector */
+		text-align: center;
+		border: 2px solid black;
+		height: 400px;
+		background image: -webkit-linear-gradient (
+		60deg, red 0% white 50% blue 100%) ;
+		
+}
+ 
+header img {
+	float: right;
+}
+
+#copyright { /* id selector */
+	text-align: center;
+}
+
+main li { /* descendant selector */
+	font-size: 150%;
+	list-style-type: square; 
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+h1,h2{ /* multiple selector */
+	color: orange;
+	padding-top: 1em;
+}
+
+	/* * means to apply to everything in document */
+	
+	h1+img{ /*sibling selector */
+		margin-top: .5em
+}
+	
+	main p { /* child selector*/
+		font-size: 200%
+		padding-left: .75em .25em .75em .25em;
+	
+}
+	
+	main ul {
+		padding-left: 2em;
+		padding-right: 2em;
+	
+	.large { /* font size of youtube link */ 
+		font-size: 200%
+		color: blue;
+}
+	
+	a:link { /*psuedo selector */
+		color: blue;
+		font-size: 150%;
+}
+		
+	a:hover, a:focus { /* changes color of link when hovered over */
+		color: red;
+}
+	/*styles for the footer*/ 
+	
+	
